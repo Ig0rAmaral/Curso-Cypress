@@ -1,0 +1,176 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 5,
+    "passes": 5,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-02-06T22:26:32.508Z",
+    "end": "2023-02-06T22:26:43.194Z",
+    "duration": 10686,
+    "testsRegistered": 5,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "b39d7956-40ba-4779-b955-5d506c74cd35",
+      "title": "",
+      "fullFile": "cypress/integration/3- ALURAPIC/alurapic.spec.js",
+      "file": "cypress/integration/3- ALURAPIC/alurapic.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "2adba196-212a-4531-85d5-4ef14407bcc2",
+          "title": "alura busca cursos",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "verifica mensagem validacao",
+              "fullTitle": "alura busca cursos verifica mensagem validacao",
+              "timedOut": null,
+              "duration": 2654,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.contains('a', 'Register now').click();\ncy.contains('button', 'Register').click();\ncy.contains('ap-vmessage', 'Email is required').should('be.visible');\ncy.contains('button', 'Register').click();\ncy.contains('ap-vmessage', 'User name is required').should('be.visible');\ncy.contains('ap-vmessage', 'Password is required').should('be.visible');\ncy.contains('ap-vmessage', 'Full name is required').should('be.visible');",
+              "err": {},
+              "uuid": "9bab570f-9888-43d0-ad6c-1426a7295e22",
+              "parentUUID": "2adba196-212a-4531-85d5-4ef14407bcc2",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "verifica mensagem de email invalido",
+              "fullTitle": "alura busca cursos verifica mensagem de email invalido",
+              "timedOut": null,
+              "duration": 1348,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.contains('a', 'Register now').click();\ncy.contains('button', 'Register').click();\ncy.get('input[formcontrolname=\"email\"]').type('jacqueline');\ncy.contains('ap-vmessage', 'Invalid e-mail').should('be.visible');",
+              "err": {},
+              "uuid": "631879ba-c28c-4cd9-bc8f-134518500d37",
+              "parentUUID": "2adba196-212a-4531-85d5-4ef14407bcc2",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "verifica mensagem de senha com menos de 8 caracteres",
+              "fullTitle": "alura busca cursos verifica mensagem de senha com menos de 8 caracteres",
+              "timedOut": null,
+              "duration": 1427,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.contains('a', 'Register now').click();\ncy.contains('button', 'Register').click();\ncy.get('input[formcontrolname=\"password\"]').type('123');\ncy.contains('button', 'Register').click();\ncy.contains('ap-vmessage', 'Mininum length is 8').should('be.visible');",
+              "err": {},
+              "uuid": "1ab293a8-4bb7-4f78-a32e-bb1cc051325f",
+              "parentUUID": "2adba196-212a-4531-85d5-4ef14407bcc2",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "verifica mensagem de user name é necessário",
+              "fullTitle": "alura busca cursos verifica mensagem de user name é necessário",
+              "timedOut": null,
+              "duration": 1139,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.contains('a', 'Register now').click();\ncy.contains('button', 'Register').click();\ncy.get('input[formcontrolname=\"userName\"]');\ncy.contains('button', 'Register').click();\ncy.contains('ap-vmessage', 'User name is required!').should('be.visible');",
+              "err": {},
+              "uuid": "8b2e76bf-05ad-49f9-a2db-179a1cb223f6",
+              "parentUUID": "2adba196-212a-4531-85d5-4ef14407bcc2",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "verifica mensagem nome com letra maiuscula",
+              "fullTitle": "alura busca cursos verifica mensagem nome com letra maiuscula",
+              "timedOut": null,
+              "duration": 1901,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.contains('a', 'Register now').click();\ncy.contains('button', 'Register').click();\ncy.get('input[formcontrolname=\"userName\"]').type('Igor');\ncy.contains('button', 'Register').click();\ncy.contains('ap-vmessage', 'Must be lower case').should('be.visible');",
+              "err": {},
+              "uuid": "13160a9d-bcd8-444d-af30-3061ff922443",
+              "parentUUID": "2adba196-212a-4531-85d5-4ef14407bcc2",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "9bab570f-9888-43d0-ad6c-1426a7295e22",
+            "631879ba-c28c-4cd9-bc8f-134518500d37",
+            "1ab293a8-4bb7-4f78-a32e-bb1cc051325f",
+            "8b2e76bf-05ad-49f9-a2db-179a1cb223f6",
+            "13160a9d-bcd8-444d-af30-3061ff922443"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 8469,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.2.0"
+    }
+  }
+}
